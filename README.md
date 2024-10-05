@@ -20,7 +20,7 @@ This project implements a sentiment analysis model that classifies Twitter data 
   
 # Prepare the dataset: 
 Place your dataset in the specified directory.
-#Run the model: 
+# Run the model: 
 Execute the Jupyter notebook to train the model.
 # Make predictions: 
 Use the provided function to predict sentiment from new text inputs.
