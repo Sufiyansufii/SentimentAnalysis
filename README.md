@@ -3,24 +3,21 @@
 # Overview
 This project implements a sentiment analysis model that classifies Twitter data into three categories: Positive, Negative, and Neutral. It utilizes deep learning techniques, including Word2Vec for word embeddings and LSTM (Long Short-Term Memory) networks for sequence classification.
 
-# Features
-Data preprocessing including tokenization, stop word removal, and stemming.
-Word embeddings using Word2Vec.
-LSTM-based neural network for sentiment classification.
-Evaluation metrics such as accuracy and loss.
-User-friendly prediction function for new inputs.
-Getting Started
-Prerequisites
-Python 3.8 or higher
-Required libraries:
-pandas
-numpy
-matplotlib
-scikit-learn
-keras
-gensim
-nltk
-Installation
+## Features
+- **Text Preprocessing**: Cleaning and preparing text data for modeling.
+- **Word2Vec Integration**: Utilizing Word2Vec embeddings for word representation.
+- **LSTM Model**: Building and training a neural network for sentiment classification.
+- **Streamlit Interface**: A user-friendly interface for inputting text and viewing predictions.
+
+## Technologies Used
+- **Python**
+- **Pandas**: For data manipulation and analysis.
+- **Keras**: For building and training the neural network model.
+- **Gensim**: For Word2Vec model training.
+- **NLTK**: For natural language processing tasks.
+- **Streamlit**: For creating a web application.
+- **Matplotlib**: For data visualization.
+  
 # Prepare the dataset: 
 Place your dataset in the specified directory.
 #Run the model: 
@@ -33,26 +30,13 @@ predict("I love the music")
 predict("I hate the rain")
 # Data Description
 The dataset consists of 1,600,000 Twitter posts and contains the following columns:
+`target`: Sentiment label (0 for Negative, 2 for Neutral, 4 for Positive)
+`ids`: Tweet IDs
+`date`: Date of the tweet
+`flag`: Unused field
+`user`: User who posted the tweet
+`text`: The tweet text
 
-# target: 
-Sentiment label (0: Negative, 2: Neutral, 4: Positive)
-# ids: 
-Unique tweet identifiers
-# date: 
-Tweet timestamps
-user: Twitter username
-text: Tweet content
-# Model Architecture
-The model consists of the following layers:
-
-# Embedding Layer: 
-Uses pre-trained Word2Vec embeddings.
-# Dropout Layer: 
-Regularization to prevent overfitting.
-# LSTM Layer: 
-For capturing dependencies in sequential data.
-# Dense Layer: 
-Output layer for binary classification (sigmoid activation).
 # Model Training
 The model is trained using the following parameters:
 
