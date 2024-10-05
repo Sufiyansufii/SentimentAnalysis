@@ -22,12 +22,7 @@ This project implements a sentiment analysis model that classifies Twitter data 
 Place your dataset in the specified directory.
 # Run the model: 
 Execute the Jupyter notebook to train the model.
-# Make predictions: 
-Use the provided function to predict sentiment from new text inputs.
-# Example of predicting sentiment:
 
-predict("I love the music")
-predict("I hate the rain")
 # Data Description
 The dataset consists of 1,600,000 Twitter posts and contains the following columns:
 `target`: Sentiment label (0 for Negative, 2 for Neutral, 4 for Positive)
